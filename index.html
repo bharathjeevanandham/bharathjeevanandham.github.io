@@ -50,9 +50,9 @@
               <p><span class="prompt">$</span> whoami</p><p class="terminal-output">senior-cloud-migration-engineer</p>
               <p><span class="prompt">$</span> focus --areas</p><p class="terminal-output">AWS · Linux · Kubernetes · SRE</p>
               <p><span class="prompt">$</span> kubectl get nodes</p>
-              <div class="node-line"><span>unicorn</span><b>Ready</b></div>
-              <div class="node-line"><span>tigor</span><b>Ready</b></div>
-              <div class="node-line"><span>zest</span><b>Ready</b></div>
+              <div class="node-line"><span>control-plane</span><b>Ready</b></div>
+              <div class="node-line"><span>worker-1</span><b>Ready</b></div>
+              <div class="node-line"><span>worker-2</span><b>Ready</b></div>
               <p class="terminal-cursor">▌</p>
             </div>
           </div>
@@ -104,15 +104,15 @@
         <div class="section-heading"><div><p class="eyebrow">04 / THE LAB</p><h2>My three-node Kubernetes homelab</h2></div><p>A small bare-metal environment for learning, testing and understanding platform operations beyond the cloud console.</p></div>
         <div class="lab-summary"><div><span class="lab-pulse"></span><strong>Self-managed Kubernetes</strong><span class="muted"> · kubeadm + containerd</span></div><span class="lab-version">Kubernetes v1.36</span></div>
         <div class="node-grid">
-          <article class="node-card"><div class="node-head"><span class="node-symbol">⌘</span><span class="node-role">CONTROL PLANE + WORKER</span></div><h3>unicorn.local</h3><p class="hardware">Lenovo ThinkCentre M700 Tiny</p><dl><div><dt>CPU</dt><dd>Intel Core i5-6500T</dd></div><div><dt>Memory</dt><dd>8 GB RAM</dd></div><div><dt>Storage</dt><dd>256 GB</dd></div><div><dt>LAN</dt><dd>192.168.1.100</dd></div></dl><span class="node-status"><i></i> Cluster node</span></article>
-          <article class="node-card"><div class="node-head"><span class="node-symbol">▤</span><span class="node-role">WORKER 1</span></div><h3>tigor.local</h3><p class="hardware">Dell OptiPlex 5050</p><dl><div><dt>CPU</dt><dd>Intel Core i5-7500</dd></div><div><dt>Memory</dt><dd>Not listed</dd></div><div><dt>Role</dt><dd>Kubernetes worker</dd></div><div><dt>LAN</dt><dd>192.168.1.102</dd></div></dl><span class="node-status"><i></i> Cluster node</span></article>
-          <article class="node-card"><div class="node-head"><span class="node-symbol">▤</span><span class="node-role">WORKER 2</span></div><h3>zest.local</h3><p class="hardware">HP desktop · Debian 11</p><dl><div><dt>CPU</dt><dd>Intel CPU (model not listed)</dd></div><div><dt>Memory</dt><dd>Not listed</dd></div><div><dt>Role</dt><dd>Kubernetes worker</dd></div><div><dt>LAN</dt><dd>192.168.1.101</dd></div></dl><span class="node-status"><i></i> Cluster node</span></article>
+          <article class="node-card"><div class="node-head"><span class="node-symbol">⌘</span><span class="node-role">CONTROL PLANE</span></div><h3>Control Plane</h3><p class="hardware">Kubernetes cluster management</p><dl><div><dt>Memory</dt><dd>8 GB</dd></div><div><dt>Storage</dt><dd>256 GB SSD</dd></div><div><dt>Role</dt><dd>Cluster control</dd></div></dl><span class="node-status"><i></i> Cluster node</span></article>
+          <article class="node-card"><div class="node-head"><span class="node-symbol">▤</span><span class="node-role">WORKER 1</span></div><h3>Worker 1</h3><p class="hardware">Kubernetes workload node</p><dl><div><dt>Memory</dt><dd>8 GB</dd></div><div><dt>Storage</dt><dd>256 GB SSD</dd></div><div><dt>Role</dt><dd>Application workloads</dd></div></dl><span class="node-status"><i></i> Cluster node</span></article>
+          <article class="node-card"><div class="node-head"><span class="node-symbol">▤</span><span class="node-role">WORKER 2</span></div><h3>Worker 2</h3><p class="hardware">Kubernetes workload node</p><dl><div><dt>Memory</dt><dd>8 GB</dd></div><div><dt>Storage</dt><dd>256 GB SSD</dd></div><div><dt>Role</dt><dd>Application workloads</dd></div></dl><span class="node-status"><i></i> Cluster node</span></article>
         </div>
         <div class="lab-details">
           <div><p class="eyebrow">PLATFORM STACK</p><h3>What I'm running and exploring</h3></div>
           <div class="stack-cloud"><span>Kubernetes</span><span>kubeadm</span><span>containerd</span><span>Calico</span><span>GitLab Runner</span><span>Harbor Registry</span><span>Argo CD / GitOps</span><span>Headlamp</span><span>OpenTelemetry</span><span>Grafana</span><span>Vault</span><span>Python</span></div>
         </div>
-        <p class="small-note">Homelab hardware details reflect the configuration currently documented. IP addresses are private LAN addresses; adjust or remove them before publishing if your network changes.</p>
+        <p class="small-note">A simple three-node Kubernetes environment for hands-on platform engineering and operations practice.</p>
       </div>
     </section>
 
