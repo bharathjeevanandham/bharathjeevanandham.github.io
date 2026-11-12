@@ -30,7 +30,7 @@
       <div class="container hero-grid">
         <div class="hero-copy">
           <p class="eyebrow"><span class="status-dot"></span> CLOUD · SRE · DEVOPS · LINUX</p>
-          <h1>Building reliable systems.<br><span class="gradient-text">Making infrastructure work.</span></h1>
+          <h1 style="font-size: clamp(1.8rem, 3.2vw, 2.6rem); margin-bottom: 20px;">Building reliable systems.<br><span class="gradient-text">Making infrastructure work.</span></h1>
           <p class="hero-intro">I'm <strong>Bharath Jeevanandham</strong>, a cloud and infrastructure professional with 14+ years of experience across Linux operations, AWS migrations, SRE, Kubernetes and DevSecOps.</p>
           <div class="hero-actions">
             <a class="button button-primary" href="#projects">Explore my work <span>↗</span></a>
@@ -79,9 +79,53 @@
         <div class="timeline">
           <article class="timeline-item"><div class="timeline-date">JUL 2022 — PRESENT</div><div class="timeline-content"><div class="timeline-title"><h3>Tata Consultancy Services</h3><span class="tag">Current</span></div><p class="role">DevSecOps Engineer · Senior Cloud Migration & Operations</p><p>Working across Linux security tooling, patch management, Kubernetes platforms, CI/CD, secrets and artifact security, alongside enterprise AWS migration programmes.</p><ul><li>Designed Shell Armor, a Linux utility to protect Bash history and support audit integrity.</li><li>Deployed self-managed Kubernetes and self-hosted GitLab Runners.</li><li>Centralized credentials with HashiCorp Vault and managed artifacts with Harbor and Nexus.</li><li>Completed an AWS account restructuring from one account into three business-unit accounts.</li><li>Migrated 50+ web applications from self-managed Kubernetes to Amazon EKS, using Argo CD for GitOps deployment.</li></ul></div></article>
           <article class="timeline-item"><div class="timeline-date">SEP 2019 — JUL 2022</div><div class="timeline-content"><h3>Cognizant Technology Solutions</h3><p class="role">Infrastructure Technology Specialist</p><p>Managed end-to-end application migrations to AWS, Linux L2/L3 troubleshooting, security operations and standard operating procedures.</p></div></article>
-          <article class="timeline-item"><div class="timeline-date">MAR 2017 — AUG 2019</div><div class="timeline-content"><h3>Congruent Info-Tech Pvt. Ltd.</h3><p class="role">DevOps Engineer</p><p>DevOps engineering experience supporting infrastructure and delivery workflows.</p></div></article>
-          <article class="timeline-item"><div class="timeline-date">FEB 2014 — FEB 2017</div><div class="timeline-content"><h3>Riskspan India Pvt. Ltd.</h3><p class="role">Associate</p></div></article>
-          <article class="timeline-item"><div class="timeline-date">DEC 2011 — JAN 2014</div><div class="timeline-content"><h3>Medmeme Informatics</h3><p class="role">System Administrator</p></div></article>
+          <article class="timeline-item"><div class="timeline-date">MAR 2017 — AUG 2019</div><div class="timeline-content">
+            <div class="timeline-title"><h3>Congruent Info-Tech Pvt. Ltd., Chennai</h3></div>
+            <p class="role">DevOps Engineer</p>
+            <p>DevOps engineering experience supporting infrastructure and delivery workflows.</p>
+            <ul>
+              <li>Managed AWS based Infrastructure</li>
+              <li>Experience with different AWS services (EC2, IAM, Route53, S3, EFS, Cloud Watch, Cloud Trail, RDS, Cloud Front, etc.)</li>
+              <li>Strong Linux systems administration skills and working on apache web server and tomcat app servers</li>
+              <li>Good communication skills and ability to demonstrate technical issues/requirements precisely.</li>
+              <li>Responsible to troubleshoot and resolve all escalated technical issues for AWS Cloud Operations</li>
+              <li>DevOps tools: Jenkins, Ansible, Git</li>
+              <li>Provide the technical guidance to L2/L1 teams and help developing the skills in the team</li>
+              <li>Work directly with Amazon Web Service architects to help reproduce and resolve customer issues</li>
+              <li>Ready to take ownership of incidents/requests/ problem assigned to the queue in Service Now</li>
+            </ul>
+          </div></article>
+          <article class="timeline-item"><div class="timeline-date">FEB 2014 — FEB 2017</div><div class="timeline-content">
+            <div class="timeline-title"><h3>RiskSpan India Pvt Ltd, Chennai</h3></div>
+            <p class="role">Associate</p>
+            <ul>
+              <li>Managing Amazon Linux/RHEL in cloud environments (AWS and Rackspace Cloud)</li>
+              <li>AWS services like EC2, VPC, IAM, ELB, Auto scaling, Cloud Front, Route53, S3, RDS.</li>
+              <li>Create and maintain custom AMIs for operating systems. Bootstrap instances for configuration changes and application deployment.</li>
+              <li>Experience in deploying and managing MySQL database.</li>
+              <li>NFS, FTP and SFTP servers. User/Group Management.</li>
+              <li>Automated approaches for daily system administration tasks.</li>
+              <li>Prepare and maintain system documentation, status logs and reports.</li>
+              <li>Monitor system usage/performance, plan and forecast future capacity needs.</li>
+              <li>Hardware upgrades and resource optimization.</li>
+            </ul>
+          </div></article>
+          <article class="timeline-item"><div class="timeline-date">DEC 2011 — JAN 2014</div><div class="timeline-content">
+            <div class="timeline-title"><h3>MedMeme Informatics, Chennai</h3></div>
+            <p class="role">System Administrator</p>
+            <ul>
+              <li>Installing / Configuring / Maintaining of CentOS / RHEL Server</li>
+              <li>Web Hosting (Apache, Tomcat). Hardening Web Server</li>
+              <li>SAMBA, NFS, Knowledge in BASH scripting</li>
+              <li>Crontab for Scheduled jobs.</li>
+              <li>Data Compressing, Backup and recovery using tar command</li>
+              <li>Maintaining E-Mail server with Sendmail and Dovecot.</li>
+              <li>Basic knowledge in LVM</li>
+              <li>Documentation of the tasks that have been implemented</li>
+              <li>Performance monitoring using vmstat, iostat, free, w, netstat etc.</li>
+              <li>Daily checklist (Servers, Network, Backup, Application)</li>
+            </ul>
+          </div></article>
         </div>
         <p class="small-note">Project dates and responsibilities are summarized for this portfolio. See the downloadable resume for the detailed chronology.</p>
       </div>
@@ -110,7 +154,24 @@
         </div>
         <div class="lab-details">
           <div><p class="eyebrow">PLATFORM STACK</p><h3>What I'm running and exploring</h3></div>
-          <div class="stack-cloud"><span>Kubernetes</span><span>kubeadm</span><span>containerd</span><span>Calico</span><span>GitLab Runner</span><span>Harbor Registry</span><span>Argo CD / GitOps</span><span>Headlamp</span><span>OpenTelemetry</span><span>Grafana</span><span>Vault</span><span>Python</span></div>
+          <div class="stack-cloud">
+            <span>Kubernetes v1.36</span>
+            <span>kubeadm</span>
+            <span>containerd</span>
+            <span>Calico</span>
+            <span>Sample Web App</span>
+            <span>Headlight Dashboard (Headlamp)</span>
+            <span>Neo4j DB</span>
+            <span>Redis Cache</span>
+            <span>Grafana + Prometheus</span>
+            <span>GitLab Kube Executor Runner</span>
+            <span>OTEL Collector (In Progress)</span>
+            <span>Web-UI-Ollama (In Progress)</span>
+            <span>Simple AI Projects (In Progress)</span>
+            <span>Harbor (In Progress)</span>
+            <span>Argo CD / GitOps</span>
+            <span>Vault</span>
+          </div>
         </div>
         <p class="small-note">A simple three-node Kubernetes environment for hands-on platform engineering and operations practice.</p>
       </div>
